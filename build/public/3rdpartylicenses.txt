@@ -116,6 +116,8 @@ THE SOFTWARE.
 
 @angular/material/checkbox
 
+@angular/material/core
+
 @angular/material/datepicker
 
 @angular/material/dialog
@@ -135,6 +137,8 @@ THE SOFTWARE.
 @angular/material/progress-bar
 
 @angular/material/radio
+
+@angular/material/select
 
 @angular/material/sidenav
 

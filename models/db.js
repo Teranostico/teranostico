@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
 const host = process.env.DB_HOST || "127.0.0.1";
-// const dbURL = `mongodb://${host}/teranostico-app`;
+const dbURL = `mongodb://${host}/teranostico-app`;
+// const dbURL = 'mongodb+srv://jorge:vk388nii@cluster0.tirpz.mongodb.net/jorge?retryWrites=true&w=majority';
 
-
-const dbURL = 'mongodb+srv://jorge:vk388nii@cluster0.tirpz.mongodb.net/jorge?retryWrites=true&w=majority'
 const readLine = require("readline");
 
 const connect = () => {
