@@ -1,3 +1,4 @@
+/**Keep here all the methods that require no administration credentiais, and are user related */
 
 //----------------------------------------------
 const passport = require("passport");
@@ -5,6 +6,8 @@ const util = require("../utils/utils");
 const mongoose = require("mongoose");
 const User = mongoose.model("User");
 const bcrypt = require("bcryptjs"); //used to encrypt the password
+// const jwtdecoder = require("jwt-decode")
+const jwt = require('jsonwebtoken');
 //-------------------------------------------
 
 const register = function (req, res) {
@@ -106,6 +109,125 @@ const refreshtoken = function (req, res) {
     }//end of if(refreshToken)
 }//end of refreshtoken
 
+const resetpassword = function (req, res) {
+
+    const { username, currentPassword, password } = req.body;
+
+    // Match user
+    //As the email address is set to be unique in the schema, you can use the Mongoose findOne method.
+    User.findOne({
+        email: username,
+    })
+        .then((user) => {
+
+            // Match password
+            bcrypt.compare(currentPassword, user.password, (err, isMatch) => {
+                if (err) throw err;
+                //---------------------------------------------------------
+                //here if everything is fine!
+                if (isMatch) {
+                    bcrypt.genSalt(10, (err, salt) => {
+                        bcrypt.hash(password, salt, (err, hash) => {
+                            if (err) throw err;
+                            user.password = hash; //set password to hash
+
+                            user //salve the user
+                                .save()
+                                .then(() => {
+                                    //const token = newUser.generateJwt();
+                                    util.sendJSONresponse(res, 200, {
+                                        success_msg: "Password change successfully",
+                                    });
+                                })
+                                .catch((err) => console.log(err));
+                        }); //end of bcrypt.hash
+                    }); //end of bcrypt.genSalt
+                }
+                //---------------------------------------------------------
+                else {
+                    util.sendJSONresponse(res, 400, { msg: "The provided password does not match with the current one in our dataset!" })
+                }
+            });
+        }) //end of then
+        .catch((err) => console.log(err)); //end of then
+}
 
 
-module.exports = { login, refreshtoken, register }
+const resetpasswordWithToken = function (req, res) {
+
+
+
+
+    let payload;
+    //----------------------------------------------------------------------
+    /**check: 
+     * Expiration date
+     * Validity
+     * Signature
+     */
+    try {
+        payload = jwt.verify(req.params.jwt, process.env.JWT_SECRET);
+        console.log(payload);
+    } catch (err) {
+        util.sendJSONresponse(res, 400, { msg: err.message })
+    }
+    //---------------------------------------------------------------
+
+    User.findOne({ email: payload.email })
+        .then((user) => {
+            if (user.resetpassword && (user.resetpassword === req.params.jwt)) {
+                bcrypt.genSalt(10, (err, salt) => {
+                    bcrypt.hash(req.body.newpassword, salt, (err, hash) => {
+                        if (err) throw err;
+                        user.password = hash;
+                        user.resetpassword = undefined;
+
+                        user
+                            .save()
+                            .then(() => {
+
+                                util.sendJSONresponse(res, 200, {
+                                    success_msg: "Reset with success"
+                                });
+                            })
+                            .catch((err) => console.log(err));
+                    }); //end of bcrypt.hash
+                }); //end of bcrypt.genSalt
+            } else util.sendJSONresponse(res, 400, { msg: "Token already used. Ask for a new one if needed" })
+        })
+}
+
+
+const verifyToken = function (req, res) {
+
+    let payload;
+    //----------------------------------------------------------------------
+    /**check: 
+     * Expiration date
+     * Validity
+     * Signature
+     */
+    try {
+        payload = jwt.verify(req.params.jwt, process.env.JWT_SECRET);
+        util.sendJSONresponse(res, 200, { payload })
+
+    } catch (err) {
+        util.sendJSONresponse(res, 400, { msg: err.message })
+    }
+    //---------------------------------------------------------------
+}
+
+
+//----------------------------------------------------------------------
+const checkemail = function (req, res) {
+    User.findOne({ email: req.body.email })
+        .then(user => {
+            if (user)
+                util.sendJSONresponse(res, 200, { res: "Email already in use by a no-doctor user" })
+            else util.sendJSONresponse(res, 200, null)
+        })
+}
+//---------------------------------------------------------------------
+
+
+module.exports = { login, refreshtoken, register, resetpassword, resetpasswordWithToken, verifyToken, checkemail }

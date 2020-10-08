@@ -99,6 +99,7 @@ module.exports = function (passport) {
                     }
                 }) //end of then
                 .catch((err) => console.log(err)); //end of then
+
         })
     ); //end of passport
 

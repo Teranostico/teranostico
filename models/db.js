@@ -71,5 +71,10 @@ process.on("SIGTERM", () => {
 connect();
 
 //----------------------------
+//This is required to create the model schemas
 require("./User");
+require("./Doctor");
+require("./Patient");
+require("./FormPatient");
+require("./FinalReport");
 //---------------------------
