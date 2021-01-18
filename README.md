@@ -22,5 +22,6 @@ This matter is under review in Frontiers in Genetics and the full paper will be 
 
 One can find a working version on the following link: http://teranostico.herokuapp.com/. Credentials: i) username: reviewer@gmail.com; ii) password: Reviewer. Keep in mind that since we are using a free Heroku account, the first access may be slow.   
 
+# Backend (computational biology)
 
 For the backend: https://github.com/BiologicalSystemModeling/Theranostics
