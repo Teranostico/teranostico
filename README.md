@@ -17,6 +17,9 @@ Keywords: Systems biology, translational oncology, personalized medicine, Galaxy
 
 This matter is being published in Frontiers in Genetics and the full paper will be up-loaded here when published.
 
+# Working prototype
+
+One can find a working version, used to create the figures herein, on the following link: http://teranostico.herokuapp.com/. Credentials: i) username: reviewer@gmail.com; ii) password: Reviewer.  It is worth mentioning, also for the source codes, that the version presented herein is the stable version, as a result, new versions may replace the one presented herein in the future. 
 
 
 For the backend: https://github.com/BiologicalSystemModeling/Theranostics
