@@ -7,7 +7,7 @@ By: Jorge Guerra Pires1,2*, Gilberto Ferreira da Silva1,2, Thomas Weyssow3, Ales
 
 Emails: Jorge Guerra Pires - jorgeguerrapires@yahoo.com.br; Gilberto Ferreira da Silva - gilbertofs@gmail.com; Thomas Weyssow - thomas.weyssow@gmail.com; Alessandra Jordano Conforte - conforteaj@gmail.com; Dante Pagnoncelli - dantepagnoncelli@gmail.com; Fabricio Alves Barbosa da Silva - fabs.fiocruz@gmail.com; Nicolas Carels - nicolas.carels@cdts.fiocruz.br; nicolas.carels@gmail.com
 
-1 hese authors contributed with most of the research. 2 Plataforma de Modelagem de Sistemas Biológicos, Center for Technology Development in Health (CDTS), Oswaldo Cruz Foundation (FIOCRUZ), Rio de Janeiro, Brazil. 3 Informatic Department, Free University of Brussels (ULB), Brussels, Belgium. 4 Laboratório de Modelagem Computacional de Sistemas Biológicos, Scientific Computing Program, FIOCRUZ, Rio de Janeiro, Brazil. 5 Centro de Oncologia Integrado (COI), Botafogo, Rio de Janeiro, Brazil.
+1 these authors contributed with most of the research. 2 Plataforma de Modelagem de Sistemas Biológicos, Center for Technology Development in Health (CDTS), Oswaldo Cruz Foundation (FIOCRUZ), Rio de Janeiro, Brazil. 3 Informatic Department, Free University of Brussels (ULB), Brussels, Belgium. 4 Laboratório de Modelagem Computacional de Sistemas Biológicos, Scientific Computing Program, FIOCRUZ, Rio de Janeiro, Brazil. 5 Centro de Oncologia Integrado (COI), Botafogo, Rio de Janeiro, Brazil.
 
 *Corresponding author for the backend: e-mails: nicolas.carels@cdts.fiocruz.br ; nicolas.carels@gmail.com
 *Corresponding author for the frontend: jorgeguerrapires@yahoo.com.br
