@@ -16,7 +16,7 @@ One aspect of personalized medicine is aiming at identifying specific targets fo
 
 Keywords: Systems biology, translational oncology, personalized medicine, Galaxy, MEAN stack, Angular, network, Shannon entropy.
 
-This matter is being published in Frontiers in Genetics and the full paper will be up-loaded here when published.
+This matter is under review in Frontiers in Genetics and the full paper will be uploaded here once it is accepted.
 
 # Working prototype
 
