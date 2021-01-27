@@ -17,7 +17,7 @@ For the backend: https://github.com/BiologicalSystemModeling/Theranostics
 
 
 # Some news
-  * Our paper was accepted: https://github.com/Teranostico/teranostico/wiki/Paper-accepted!  
+  * Our paper was accepted. See our Wiki.  
   
   
   
