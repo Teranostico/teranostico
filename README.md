@@ -18,8 +18,10 @@ For the backend: https://github.com/BiologicalSystemModeling/Theranostics
 
 # Some news
   * Our paper was accepted. See our Wiki.  
-  
-  
+ 
+ # MIT license note
+ 
+Note that the use of these codes is under MIT licence, but that the concept of theranostics, as presented here, was registered under the Brazilian intelectual property regulation number BR1020150308191. Organizations interested in the development of this concept are encouraged to contact Nicolas Carels (nicolas.carels@cdts.fiocruz.br; nicolas.carels@gmail.com).   
   
  
  
