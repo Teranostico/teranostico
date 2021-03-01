@@ -17,7 +17,7 @@ For the backend: https://github.com/BiologicalSystemModeling/Theranostics
 
 
 # Some news
-  * Our paper was accepted. See our Wiki.  
+  * Our paper was accepted: https://www.frontiersin.org/articles/10.3389/fgene.2021.624259/full.  
  
  # MIT license note
  
