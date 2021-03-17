@@ -21,7 +21,7 @@ For the backend: https://github.com/BiologicalSystemModeling/Theranostics
  
  # MIT license note
  
-Note that the use of these codes is under MIT licence, but that the concept of theranostics, as presented here (https://github.com/BiologicalSystemModeling/Theranostics), was registered under the Brazilian intelectual property regulation number BR1020150308191. Organizations interested in the development of this concept are encouraged to contact Nicolas Carels (nicolas.carels@cdts.fiocruz.br; nicolas.carels@gmail.com). Thus, some restrictions may apply. For the current codes, you can contact Jorge Guerra Pires (jorgeguerrabrazil+frontend@gmail.com) 
+Note that the use of these codes is under MIT license, but that the concept of theranostics, as presented here (https://github.com/BiologicalSystemModeling/Theranostics), was registered under the Brazilian intelectual property regulation number BR1020150308191. Organizations interested in the development of this concept are encouraged to contact Nicolas Carels (nicolas.carels@cdts.fiocruz.br; nicolas.carels@gmail.com). Thus, some restrictions may apply. For the current codes, you can contact Jorge Guerra Pires (jorgeguerrabrazil+frontend@gmail.com) 
  
  
 # Funding statement
