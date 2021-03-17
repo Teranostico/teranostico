@@ -15,6 +15,10 @@ One can find a working version on the following link: http://teranostico.herokua
 
 For the backend: https://github.com/BiologicalSystemModeling/Theranostics
 
+# MIT license
+Use of these codes is under MIT license. 
+The concept of theranostics, as presented https://github.com/BiologicalSystemModeling/Theranostics, was registered under the Brazilian intellectual property regulation number BR1020150308191. Organizations interested in the development of this concept are encouraged to contact Nicolas Carels.
+For the web-application codes, please, contact Jorge Guerra Pires, jorgeguerrabrazil+frontend@gmail.com
 
 # Some news
   * Our paper was accepted: https://www.frontiersin.org/articles/10.3389/fgene.2021.624259/full.  
