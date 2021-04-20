@@ -22,6 +22,8 @@ For the web-application codes, please, contact Jorge Guerra Pires, jorgeguerrabr
 
 # Some news
   * Our paper was accepted: https://www.frontiersin.org/articles/10.3389/fgene.2021.624259/full.  
+  * Final report approved! https://www.researchgate.net/publication/350994111_Desenho_e_Desenvolvimento_de_uma_aplicacao_web_baseado_em_JavaScript_para_a_plataforma_Teranostico
+
  
 # Funding statement
 The first release of this work was supported by a grant (E-26/290.077/2017 - 227190) to Nicolas Carels and a postdoc fellowship (E-26/260.046/2019 - 242550) to Jorge Guerra Pires
